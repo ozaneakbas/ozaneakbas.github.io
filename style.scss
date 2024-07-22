@@ -1,0 +1,547 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+//@import "reset";
+//@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+nodoi {
+  color: black;
+  text-decoration: none;
+}
+
+simpleentry {
+  font-family: 'Bitter', serif;
+  font-size: 12pt;
+  font-weight: 300;
+  font-display: auto;
+}
+
+course {
+  font-family: 'Bitter', serif;
+  font-size: 14pt;
+  font-weight: 300;
+  font-display: auto;
+}
+
+a {
+  // color: #1772d0;
+  color: black;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #daa520;
+  text-decoration: none;
+}
+
+a-footer {
+  color: #1772d0;
+  text-decoration: none;
+  font-family: 'Bitter', serif;
+  font-size: 12pt;
+  font-weight: 300;
+  font-display: auto;
+}
+
+a-footer:focus,
+a-footer:hover {
+  color: #daa520;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+nodoi,
+a {
+  font-family: 'Bitter', serif;
+  font-size: 14pt;
+  font-weight: 300;
+  font-display: auto;
+}
+
+body {
+  background-color: #F0EDE2;
+}
+
+li::marker {
+  color: #377E7F;
+}
+
+p {
+  padding: 0em 1em 0em 1em;
+  line-height: 1.5;
+}
+
+strong {
+  font-family: Bitter;
+  font-size: 14px;
+  font-display: auto;
+}
+
+h2 {
+  font-family: Bitter;
+  font-size: 14pt;
+  font-display: auto;
+  font-weight: normal;
+  padding: 0em 0em 0.25em 0.25em;
+  margin: 0px;
+  display:inline; 
+}
+
+h3 {
+  font-family: Bitter;
+  font-size: 14px;
+  font-weight: 700;
+  font-display: auto;
+  padding: 0px;
+  margin: 0px;
+  display:inline; 
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 20pt;
+  font-weight: normal;
+  font-display: auto;
+  text-align: left;
+  padding: 0em 0em 1em 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+section {
+  font-family: 'Bitter', serif;
+  font-size: 20pt;
+  font-weight: 700;
+  font-display: auto;
+  font-variant: small-caps;
+  text-align: left;
+  padding: 0em 0em 1em 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  overflow: hidden;
+}
+
+.inline-hr {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 1;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    // background: linear-gradient(to right, transparent, #377E7F, transparent);
+    background-color: #377E7F;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 3pt;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 0.5em;
+    margin-right: 84%;
+    line-height: 1.5em;
+    color: black;
+    background-color: #F0EDE2;
+  }
+}
+
+subsection {
+  font-family: 'Bitter', serif;
+  font-size: 16pt;
+  font-weight: 700;
+  font-display: auto;
+  font-variant: small-caps;
+  text-align: left;
+  padding: 0em 0em 0em 2.75em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+footer {
+  font-family: 'Bitter', serif;
+  font-size: 12pt;
+  font-weight: 400;
+  font-display: auto;
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  line-height: 2;
+}
+
+.wide-hr {
+  border: 2pt solid #377E7F;
+  width: 100%;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.headerimg-wide {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+/* Default header images */
+.default-headerimg {
+  display: flex;
+  justify-content: center; /* Aligns items in the center horizontally */
+  align-items: center; /* Aligns items in the center vertically */
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.default-headerimg img {
+  flex: 1; /* Allows the images to take up equal space */
+  margin: 10px 25px; /* Adjusts spacing between images */
+  max-width: 15%;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: calc( 2vw + 2vh);
+}
+
+/* Mobile header image */
+.mobile-headerimg {
+  display: none; /* Hide by default */
+}
+
+.header {
+  // background-color: #112757;
+  background-color: #F0EDE2;
+  overflow: hidden;
+  padding: 0em;
+}
+
+.header nodoi {
+  float: left;
+  margin-left: 2em;
+  color: black;
+  text-align: center;
+  padding: 0em 0em 0em 0em;
+  text-decoration: none;
+  font-family: 'Bitter', serif;
+  font-size: 20pt;
+  font-weight: 700;
+  font-variant: small-caps;
+  line-height: 1.5;
+}
+
+.header a {
+  float: left;
+  margin-right: 2em;
+  color: black;
+  text-align: center;
+  padding: 0em 0em 0em 0em;
+  text-decoration: none;
+  font-family: 'Bitter', serif;
+  font-size: 20pt;
+  font-weight: 700;
+  font-variant: small-caps;
+  line-height: 1.5;
+}
+
+footer a {
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.header a.logo {
+  font-size: 0.25em;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #F0EDE2;
+  // color: #daa520;
+}
+
+.header a.active {
+  background-color: #F0EDE2;
+  // color: #daa520;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left {
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-cell {
+  padding: 2.5%;
+  width: 80%;
+  vertical-align: middle;
+  text-align: justify;
+}
+
+.profile-photo {
+  display: block;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4em;
+  padding-top: 1em;
+}
+
+.contact {
+  ul {
+    padding: 0em 0em 0em 2em;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Bitter', serif;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 2;
+  }
+
+  li + li:before {
+    content: "";
+  }
+
+  a {
+    padding: 0em 0em 0em 0.5em;
+    font-size: 12pt;
+  }
+
+  .social-icons {
+    a {
+      white-space: nowrap;
+    }
+    #email {
+    padding-left: 0.5em; /* Adjust this value as needed */
+  }
+  }
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: #F0EDE2;
+    font-family: 'Bitter', serif;
+    font-size: 20pt;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+.header-content {
+    text-align: left;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    gap: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bitter', serif;
+    font-size: 20pt;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+@media screen and (max-width: 500px) {
+
+.content-cell {
+width: 100%;
+max-width:100%;
+text-align: justify;
+}
+
+.profile-photo {
+display: none; /* Hide profile photo on mobile */
+}
+
+/* Default header images */
+.default-headerimg {
+display: none;
+}
+
+/* Mobile header image */
+.mobile-headerimg {
+display: flex;
+justify-content: center; /* Aligns items in the center horizontally */
+align-items: center; /* Aligns items in the center vertically */
+overflow: hidden;
+padding: 20px 10px;
+}
+
+.mobile-headerimg img {
+margin: 0 10px; /* Adjusts spacing between images */
+width: 50%;
+max-height: auto;
+object-fit: contain;
+border-radius: calc( 2vw + 2vh);
+}
+
+.contact {
+li {
+font-size: 10pt;
+}
+
+span {
+font-size: 10pt;
+}
+
+a {
+font-size: 10pt;
+}
+}
+
+
+.site-header {
+flex-direction: column;
+line-height: 2;
+font-size: 16pt;
+}
+
+.header-content {
+text-align: justify;
+}
+
+nav a {
+font-size: 16pt;
+}
+
+.header {
+flex-direction: column;
+}
+
+.header a {
+float: none;
+display: block;
+text-align: left;
+width: 100%;
+}
+
+.header-right,
+.header-left {
+text-align: justify;
+vertical-align: middle;
+width: 100%;
+flex-direction: column;
+align-items: center;
+font-size: 16pt;
+}
+
+.header-left nodoi,
+.header-right a {
+text-align: center; /* Center align text */
+width: 100%;
+padding: 10px 0; /* Add padding for better spacing */
+font-size: 16pt; /* Adjust font size for mobile */
+}
+
+.headerimg img {
+max-width: 100%;
+}
+
+body,
+td,
+th,
+tr,
+p,
+nodoi,
+a,
+a-footer,
+course,
+footer {
+font-size: 10pt;
+}
+
+footer a {
+font-size: 10pt;
+}
+
+simpleentry {
+font-size: 10pt;
+}
+
+section {
+font-size: 16pt;
+}
+
+subsection {
+font-size: 12pt;
+}
+
+.container {
+padding: 0 5px;
+}
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+//@import "highlights";
+//@import "svg-icons";
