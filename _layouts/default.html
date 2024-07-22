@@ -25,7 +25,8 @@
 
   <!-- CSS styles -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+          
   <!-- Canonical link for SEO -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -79,25 +80,31 @@
                             My research interests lie at the intersection of financial economics and industrial organization.
                             </p>
                             <p>
-                            <b style="font-weight:700">Contact:</b>
+                            <b style="font-family:'Bitter',serif;font-variant:small-caps;font-size:16pt;">contact:</b>
                             <div class="contact">
                                 <ul class="social-icons">
                                     <li>
-                                        <i class="fa-solid fa-square-envelope" aria-hidden="true" style="font-size:1.5em;color:#377E7F;"></i>
+                                        <i class="fa-solid fa-square-envelope" aria-hidden="true" style="font-size:1.75em;color:#377E7F;"></i>
                                         <div id="email">
                                             <noscript><i>Please enable Javascript to view</i></noscript>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <i class="fa-brands fa-square-x-twitter" aria-hidden="true" style="font-size:1.5em;color:#377E7F;"></i>
-                                        <a href="https://x.com/ozaneakbas" style="color:black"> <span>ozaneakbas</span> </a>
                                     </li>
                                 </ul>
                             </div>
                             </p>
                         </td>
                         <td class="profile-photo">
-                            <img style="max-width:100%;max-height:auto;object-fit:contain;border-radius:calc( 2vw + 2vh);" alt="profile photo" src="images/ozaneakbas-with-bg.png">
+                            <img style="margin-top:2em;max-width:100%;max-height:auto;object-fit:contain;border-radius:calc( 2vw + 2vh);" alt="profile photo" src="images/ozaneakbas-with-bg.png">
+                                <div class="contact2">
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="https://x.com/ozaneakbas" style="color:black;"> <i class="fa-brands fa-square-x-twitter" aria-hidden="true" style="font-size:2em;color:#377E7F;"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ozaneakbas/" style="color:black;"> <i class="fa-brands fa-linkedin" aria-hidden="true" style="font-size:2em;color:#377E7F;"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
                         </td>
                     </tr>
                 </table>
@@ -204,7 +211,7 @@
                             <footer>
                             &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
                             <br>
-                            Design and source code influenced by <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://leonidk.com/">Leonid Keselman</a>. Email scrambler is by <a href="https://jeffdonahue.com/">Jeff Donahue</a>.
+                            Design and source code are influenced by <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://leonidk.com/">Leonid Keselman</a>. Email scrambler is by <a href="https://jeffdonahue.com/">Jeff Donahue</a>.
                             <br>
                             The practice of writing haiku summaries of my research papers is inspired by <a href="https://kirbyknielsen.com/">Kirby Nielsen</a>.
                             </footer>
@@ -217,10 +224,12 @@
 </body>
 
 <script>
-    emailScramble = new scrambledString(document.getElementById('email'),
-                                        'emailScramble', 'kow.buzrak.kca.awan@asic',
-                                        [18,1,15,5,8,23,2,14,9,7,22,24,17,13,19,3,12,20,4,11,6,10,16,21]);
+    emailScramble = new scrambledString(
+        document.getElementById('email'),
+        'emailScramble',
+        'kow.buzrak.kca.awan@asic',
+        [18,1,15,5,8,23,2,14,9,7,22,24,17,13,19,3,12,20,4,11,6,10,16,21]
+    );
 </script>
 
 </html>
-

@@ -98,7 +98,7 @@ h2 {
   font-weight: normal;
   padding: 0em 0em 0.25em 0.25em;
   margin: 0px;
-  display:inline; 
+  display:inline;
 }
 
 h3 {
@@ -108,7 +108,7 @@ h3 {
   font-display: auto;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display:inline;
 }
 
 h1 {
@@ -380,6 +380,40 @@ footer a {
   }
 }
 
+.contact2 {
+  ul {
+    padding: 1em 0em 0em 3em;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    align-items: center;
+    justify-content: middle;
+    font-family: 'Bitter', serif;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 2;
+  }
+
+  li + li:before {
+    content: "";
+  }
+
+  a {
+    padding: 0em 0em 0em 0.5em;
+    font-size: 12pt;
+  }
+  
+  .social-icons {
+    a {
+      white-space: nowrap;
+    }
+  }
+}
+
+
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -540,6 +574,20 @@ font-size: 12pt;
 padding: 0 5px;
 }
 }
+
+@media only screen and (max-width: 1024px) {
+
+.default-headerimg img {
+  flex: 1; /* Allows the images to take up equal space */
+  margin: 10px 25px; /* Adjusts spacing between images */
+  max-width: 10%;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: calc( 2vw + 2vh);
+}
+
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
