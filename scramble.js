@@ -54,7 +54,7 @@ function bubbleSortStep() {
     this.bubbleSortBookmark = i;
     if (!this.changed) {
         clearInterval(this.interval);
-        this.tag.innerHTML = this.string + ' <a href="#" style="color:#377E7F" onClick="' + this.objName + '.copyToClipboard();return false;"><i class="fa-solid fa-copy" aria-hidden="true" style="font-size:1em;color:#377E7F;"></i></a>';
+        this.tag.innerHTML = this.string + ' <a href="#" style="color:#377E7F" onClick="' + this.objName + '.copyToClipboard();return false;"><i class="fa-solid fa-copy" aria-hidden="true" style="font-size:2em;color:#377E7F;"></i></a>';
     }
 }
 
@@ -65,5 +65,5 @@ scrambledString.prototype.copyToClipboard = function() {
     textArea.select();
     document.execCommand("Copy");
     document.body.removeChild(textArea);
-    alert("Email address copied to clipboard");
+    alert("Email address now copied to clipboard.");
 };
