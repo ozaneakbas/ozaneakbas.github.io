@@ -81,65 +81,16 @@ li::marker {
 }
 
 p {
-  padding: 0em 1em 0em 1em;
+  //padding: 0 1em;
+  margin-left: 5%;
   line-height: 1.5;
 }
 
-strong {
-  font-family: Bitter;
-  font-size: 14px;
-  font-display: auto;
-}
-
-h2 {
-  font-family: Bitter;
-  font-size: 14pt;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0em 0em 0.25em 0.25em;
-  margin: 0px;
-  display:inline;
-}
-
-h3 {
-  font-family: Bitter;
-  font-size: 14px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline;
-}
-
-h1 {
+.inline-hr {
   font-family: 'Bitter', serif;
-  font-size: 20pt;
-  font-weight: normal;
-  font-display: auto;
-  text-align: left;
-  padding: 0em 0em 1em 0em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-section {
-  font-family: 'Bitter', serif;
-  font-size: 20pt;
   font-weight: 700;
   font-display: auto;
   font-variant: small-caps;
-  text-align: left;
-  padding: 0em 0em 1em 0em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-left: 0em;
-  margin-right: 0em;
-  overflow: hidden;
-}
-
-.inline-hr {
   line-height: 1em;
   position: relative;
   outline: 0;
@@ -148,10 +99,10 @@ section {
   text-align: center;
   height: 1.5em;
   opacity: 1;
+
   &:before {
     content: '';
     // use the linear-gradient for the fading effect
-    // use a solid background color for a solid bar
     // background: linear-gradient(to right, transparent, #377E7F, transparent);
     background-color: #377E7F;
     position: absolute;
@@ -160,32 +111,45 @@ section {
     width: 100%;
     height: 3pt;
   }
+  
   &:after {
     content: attr(data-content);
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    text-align: left;
     color: black;
-
     padding: 0 0.5em;
-    margin-right: 84%;
+    margin: auto;
     line-height: 1.5em;
     color: black;
     background-color: #F0EDE2;
   }
 }
 
-subsection {
-  font-family: 'Bitter', serif;
+.section {
+  font-size: 20pt;
+  margin-bottom: 1.5em;
+  
+  &:after {
+    left: 5%;
+  }
+}
+
+.subsection {
   font-size: 16pt;
-  font-weight: 700;
-  font-display: auto;
-  font-variant: small-caps;
-  text-align: left;
-  padding: 0em 0em 0em 2.75em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-left: 0em;
-  margin-right: 0em;
+  
+  &:before {
+    background-color: #F0EDE2;
+  }
+  
+  &:after {
+    left: 5.275%;
+  }
+}
+
+.aligned-ul {
+  margin-bottom: 2em;
+  padding-left: calc(5.275% + 1.675em);
+  line-height: 1.5;
 }
 
 footer {
@@ -239,13 +203,12 @@ span.highlight {
   padding: 20px 10px;
 }
 
-/* Default header images */
 .default-headerimg {
   display: flex;
-  justify-content: center; /* Aligns items in the center horizontally */
-  align-items: center; /* Aligns items in the center vertically */
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  padding: 20px 10px;
+  padding: 20px 0.5em;
 }
 
 .default-headerimg img {
@@ -257,7 +220,6 @@ span.highlight {
   border-radius: calc( 2vw + 2vh);
 }
 
-/* Mobile header image */
 .mobile-headerimg {
   display: none; /* Hide by default */
 }
@@ -330,24 +292,16 @@ footer a {
 }
 
 .content-cell {
-  padding: 2.5%;
-  width: 80%;
+  padding: 0 2.5%;
+  width: 77.5%;
   vertical-align: middle;
   text-align: justify;
 }
 
-.profile-photo {
-  display: block;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 4em;
-  padding-top: 1em;
-}
-
 .contact {
   ul {
-    padding: 0em 0em 0em 2em;
-    margin: 0;
+    padding-left: 5.275%; /* Adjust this value to align with the red line */
+    margin-bottom: 2em;
     list-style-type: none;
   }
 
@@ -364,61 +318,105 @@ footer a {
   li + li:before {
     content: "";
   }
-
+  
   a {
-    padding: 0em 0em 0em 0.5em;
-    font-size: 12pt;
+    padding-left: 1em;
+    font-size: 0;
   }
 
   .social-icons {
-    a {
+  
+      a {
       white-space: nowrap;
+      font-size: 12pt;
     }
+
     #email {
-    padding-left: 0.5em; /* Adjust this value as needed */
+        padding-left: 0.5em;
+    }
+    
   }
-  }
+}
+
+
+.profile-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.profile-photo-img {
+  max-width: 202px;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: calc(2vw + 2vh);
+  margin: 50px 25px 10px 25px;
+}
+
+.default-headerimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.default-headerimg img {
+  flex: 1; /* Allows the images to take up equal space */
+  margin: 10px 25px; /* Adjusts spacing between images */
+  max-width: 15%;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: calc( 2vw + 2vh);
 }
 
 .contact2 {
   ul {
-    padding: 1em 0em 0em 3em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 0;
     margin: 0;
     list-style-type: none;
   }
 
   li {
-    display: inline-block;
+    margin: 0;
+    padding: 0;
+    display: flex;
     align-items: center;
-    justify-content: middle;
-    font-family: 'Bitter', serif;
-    font-size: 12pt;
-    font-weight: 300;
-    line-height: 2;
-  }
-
-  li + li:before {
-    content: "";
+    justify-content: center;
   }
 
   a {
-    padding: 0em 0em 0em 0.5em;
-    font-size: 12pt;
+    padding: 0;
+    font-size: 0;
   }
-  
+
   .social-icons {
     a {
       white-space: nowrap;
+      font-size: 2em;
     }
   }
 }
-
 
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 2em;
+    //padding: 0.5em 2em;
+    padding: 0.5em 0;
+    margin: 0 6%;
     background-color: #F0EDE2;
     font-family: 'Bitter', serif;
     font-size: 20pt;
@@ -429,6 +427,7 @@ footer a {
 .header-content {
     text-align: left;
     flex-grow: 1;
+    //margin-left: 5%;
 }
 
 nav {
