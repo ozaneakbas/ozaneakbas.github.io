@@ -10,4 +10,5 @@ date: "July 2024"
 doi: https://dx.doi.org/10.2139/ssrn.4629235
 haiku: "Discouraged firms wait;/ in fact some are good loans, so/ credit gap widens."
 presentations: ""
+notes: "This project stems from my pre-PhD research."
 ---
