@@ -7,8 +7,7 @@ status: draft
 journal: ""
 title: "Portfolio Diversification and Complementarity in Asset Demand Systems"
 date: "December 2024"
-doi: 
+doi: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5057341
 haiku: "Not just one asset. / Cross-asset links shape demand. / Spillovers emerge."
-#haiku: "Beta isn't fixed, so/ demand isn't simple logit./ Spillovers emerge."
 presentations: ""
 ---
