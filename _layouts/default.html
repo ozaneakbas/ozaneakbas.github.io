@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <table style="width:100%;max-width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table style="width:100%;max-width:70%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tr style="padding:0px">
             <td style="padding:0px">
                 <!-------------------------------------------------------------------------->
@@ -193,7 +193,10 @@
                         <li>
                             <a href="{{post.doi}}" style="font-weight:700;"> {{post.title}} </a>
                             {% if post.type == 'joint' %}
+                            <br>
+                            <simpleentry>
                             <em> with {{post.coauthors}} </em>
+                            </simpleentry>               
                             {% endif %}
                             {% if post.status == 'rr' %}
                             <br>
@@ -208,7 +211,7 @@
                             {% if post.notes != "" %}
                             <br>
                             <simpleentry>
-                            <b><i>{{post.notes}}</i></b>
+                            <i>{{post.notes}}</i>
                             </simpleentry>
                             {% endif %}
                             {% if post.presentations != "" %}

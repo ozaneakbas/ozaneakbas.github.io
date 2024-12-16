@@ -54,6 +54,12 @@ simpleentry {
   font-size: 12pt;
   font-weight: 300;
   font-display: auto;
+  
+  a {
+    font-size: inherit; /* Inherit the font size from simpleentry */
+    text-decoration: none; /* Optional: Remove underline */
+    color: inherit; /* Optional: Inherit the color if needed */
+}
 }
 
 course {
@@ -292,7 +298,7 @@ span.highlight {
 
 footer a {
   font-size: 10pt;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .header a.logo {

@@ -2,7 +2,7 @@
 layout: post
 categories: workingpaper
 type: joint
-coauthors: "Frank Betz and Luca Gattini"
+coauthors: '<a href="https://lu.linkedin.com/in/frank-betz-605a3b3">Frank Betz</a> and <a href="https://lu.linkedin.com/in/lucagattini">Luca Gattini</a>'
 status: draft
 journal: ""
 title: "Quantifying Credit Gaps Using Survey Data on Discouraged Borrowers"
