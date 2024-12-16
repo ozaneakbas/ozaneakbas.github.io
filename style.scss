@@ -486,17 +486,74 @@ nav a {
     font-variant: small-caps;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 393px) {
+
+  table {
+    max-width: 95% !important; /* Override the max-width to 90% */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact2 {
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Center-align all icons */
+    align-items: center; /* Vertically align content */
+    max-width: 90%; /* Match the teal line width */
+    margin: 0 auto; /* Center the container */
+    padding: 0.5em 0; /* Add some vertical spacing */
+
+    ul {
+      display: flex; /* Flexbox for the icon list */
+      justify-content: space-evenly; /* Even spacing between icons */
+      gap: 1em; /* Adjust spacing between icons */
+      width: 100%; /* Occupy full width of the container */
+      list-style-type: none; /* Remove list bullets */
+      margin: 0; /* Remove extra margins */
+      padding: 0; /* Remove extra padding */
+    }
+
+    li {
+      flex: 1; /* Ensure each icon takes equal space */
+      display: flex;
+      justify-content: center; /* Center the icons */
+    }
+
+    .social-icons {
+
+      a {
+        font-size: 3em; /* Set icon size for mobile */
+        color: #377E7F; /* Icon color */
+        text-decoration: none; /* Remove underlines */
+      }
+    
+    }
+  }
 
 .hide-on-mobile {
     display: none; /* Hide the line on small screens */
 }
 
-
 .content-cell {
 width: 100%;
 max-width:100%;
 text-align: justify;
+padding: 0 1em;
+margin: 0 auto;
+}
+
+p {
+  margin: 0 auto 1em auto; // Remove default margins and center
+  line-height: 1.5;
+}
+
+.container {
+  padding: 0 1em; // Remove excessive container padding and add narrow spacing
+  margin: 0 auto; // Center container
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .profile-photo {
@@ -516,11 +573,11 @@ flex-direction: column;
 justify-content: center; /* Aligns items in the center horizontally */
 align-items: center; /* Aligns items in the center vertically */
 overflow: hidden;
-padding: 20px 10px 0 10px;
+padding: 0;
 }
 
 .mobile-headerimg img {
-margin: 0 10px; /* Adjusts spacing between images */
+margin: 0;
 width: 50%;
 max-height: auto;
 object-fit: contain;
@@ -571,7 +628,7 @@ font-size: 10pt;
 .site-header {
 flex-direction: column;
 line-height: 2;
-font-size: 16pt;
+font-size: 10pt;
 }
 
 .header-content {
@@ -583,8 +640,17 @@ nav a {
 font-size: 16pt;
 }
 
+nav {
+  display: flex;
+  gap: 4em;
+  margin-top: -0.75em;
+  margin-bottom: -0.75em;
+}
+
 .header {
-flex-direction: column;
+  flex-direction: column;
+  padding: 0; /* Remove any padding around the header */
+  margin: 0; /* Remove any margins */
 }
 
 .header a {
@@ -601,14 +667,16 @@ vertical-align: middle;
 width: 100%;
 flex-direction: column;
 align-items: center;
-font-size: 16pt;
+font-size: 14pt;
+margin: 0;
+padding: 0;
 }
 
 .header-left nodoi,
 .header-right a {
 text-align: center; /* Center align text */
 width: 100%;
-padding: 10px 0; /* Add padding for better spacing */
+padding: 0; /* Add padding for better spacing */
 font-size: 16pt; /* Adjust font size for mobile */
 }
 
@@ -624,13 +692,16 @@ p,
 nodoi,
 a,
 a-footer,
-course,
-footer {
+course {
 font-size: 10pt;
 }
 
+footer {
+  font-size: 8pt;
+}
+
 footer a {
-font-size: 10pt;
+font-size: 8pt;
 }
 
 simpleentry {
@@ -638,16 +709,17 @@ font-size: 10pt;
 }
 
 section {
-font-size: 16pt;
+font-size: 5pt;
 }
 
 subsection {
-font-size: 12pt;
+font-size: 10pt;
 }
 
-.container {
-padding: 0 5px;
+.inline-hr.section {
+  font-size: 16pt;
 }
+
 }
 
 @media only screen and (max-width: 1024px) {
