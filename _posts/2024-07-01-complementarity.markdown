@@ -5,9 +5,10 @@ type: joint
 coauthors: '<a href="https://sites.google.com/view/aowang-economics/">Ao Wang</a>'
 status: draft
 journal: ""
-title: "Portfolio Diversification and Complementarity in Asset Demand Systems"
-date: "December 2024"
-doi: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5057341
-haiku: "Not just one asset. / Cross-asset links shape demand. / Spillovers emerge."
+title: "Risk and Return in Asset Demand Systems"
+date: "May 2025"
+doi: https://dx.doi.org/10.2139/ssrn.5057341
+#haiku: "Not just one asset. / Cross-asset links shape demand. / Spillovers emerge."
+haiku: "Uniform no more. / Risk-return tradeoffs reshape, / how assets relate."
 presentations: ""
 ---
