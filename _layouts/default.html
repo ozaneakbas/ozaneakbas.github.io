@@ -253,6 +253,50 @@
                         {% endfor %}
                     </ul>
                     <!---------------------------------------------------------------------->
+                    <!----------------------------- PRE-PHD -------------------------------->
+                    <!---------------------------------------------------------------------->
+                    <hr class="inline-hr subsection" data-content="pre-phd">
+                    <ul class="aligned-ul">
+                        {% for post in site.posts %}
+                        {% for cat in post.categories %}
+                        {% if cat == 'prephd' %}
+                        <li>
+                            <a href="{{post.doi}}" style="font-weight:700;"> {{post.title}} </a>
+                            {% if post.type == 'joint' %}
+                            <br>
+                            <simpleentry>
+                            <em> with {{post.coauthors}} </em>
+                            </simpleentry>               
+                            {% endif %}
+                            {% if post.status == 'rr' %}
+                            <br>
+                            <b> R&amp;R at {{post.journal}} </b>
+                            {% endif %}
+                            {% if post.haiku != "" %}
+                            <br>
+                            <simpleentry>
+                            <em style="color:#377E7F"> {{post.haiku}} </em>
+                            </simpleentry>
+                            {% endif %}
+                            {% if post.notes != "" %}
+                            <br>
+                            <simpleentry>
+                            <i>{{post.notes}}</i>
+                            </simpleentry>
+                            {% endif %}
+                            {% if post.presentations != "" %}
+                            <br>
+                            <simpleentry>
+                            <b> Presentations: </b> {{post.presentations}}
+                            </simpleentry>
+                            {% endif %}
+                            <p></p>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>                   
+                    <!---------------------------------------------------------------------->
                     <!----------------------------- TEACHING ------------------------------->
                     <!---------------------------------------------------------------------->
                     <hr id="teaching" class="inline-hr section" data-content="teaching">
