@@ -1,0 +1,12 @@
+---
+layout: post
+categories: workinprogress
+type: solo
+coauthors: ""
+status: draft
+journal: ""
+title: "Dynamic Equity Supply under Inelastic Demand"
+date: "November 2025"
+doi:
+haiku: ""
+---

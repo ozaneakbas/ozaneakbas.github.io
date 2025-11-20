@@ -3,8 +3,8 @@ layout: post
 categories: workingpaper
 type: joint
 coauthors: '<a href="https://sites.google.com/view/aowang-economics/">Ao Wang</a>'
-status: draft
-journal: ""
+status: rr
+journal: "Econometrica"
 title: "Risk and Return in Asset Demand Systems"
 date: "July 2025"
 doi: https://dx.doi.org/10.2139/ssrn.5057341

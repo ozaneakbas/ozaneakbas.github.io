@@ -225,6 +225,23 @@ footer {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
+/* Styling for R&R line under working papers */
+.rr-journal {
+  display: block;               /* puts it on its own line */
+  font-weight: 900;             /* bold */
+  font-size: 12pt;;            /* slightly smaller than the title */
+  margin-top: 0.4em;            /* half-line above */
+  margin-bottom: -1.4em;         /* half-line below */
+  font-family: 'Bitter', serif; /* matches your title font */
+}
+
+/* Improve ampersand appearance */
+.rr-journal::before,
+.rr-journal::after {
+  /* Forces a cleaner rendering of the ampersand across browsers */
+  font-variant-ligatures: none;
+}
+
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
