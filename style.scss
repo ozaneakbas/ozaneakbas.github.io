@@ -758,6 +758,23 @@ font-size: 10pt;
 
 }
 
+/* ----------------------------- */
+/* MOBILE ADJUSTMENTS FOR R&R    */
+/* ----------------------------- */
+@media screen and (max-width: 600px) {
+  .rr-journal {
+    font-size: 12pt !important;      /* smaller on mobile */
+    font-weight: 600;               /* slightly lighter for readability */
+    margin-top: 0.15em !important;  /* tighter spacing */
+    margin-bottom: -1.15em !important;
+    line-height: 1.2 !important;    /* reduces the “tall block” look */
+  }
+}
+
+
+
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
