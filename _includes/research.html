@@ -1,0 +1,137 @@
+<div class="research-block gray">
+  <hr id="research" class="inline-hr section" data-content="working papers">
+  
+  <ul class="aligned-ul">
+    {% for p in site.data.research.working_papers %}
+      <li>
+        <div class="paper-row">
+          {% if p.image %}
+            <div class="paper-img">
+              <img src="{{ '/assets/img/papericon/' | relative_url }}{{ p.image }}" alt="{{ p.title }}">
+            </div>
+          {% endif %}
+
+          <div class="paper-text">
+            <a href="{{ p.url }}" style="font-weight: 500;">{{ p.title }}</a>
+
+            {% if p.type == "joint" and p.coauthors_html %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry>with {{ p.coauthors_html }}</simpleentry>
+              </div>
+            {% endif %}
+
+            {% if p.status == "rr" and p.journal %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry>
+                  <span style="font-weight: 500;">Revise and Resubmit at {{ p.journal }}</span>
+                </simpleentry>
+              </div>
+            {% endif %}
+
+            {% if p.haiku and p.haiku != "" %}
+              <div style="margin-top: 1.2em;">
+                <simpleentry><em style="color:#377E7F; font-style: italic;">{{ p.haiku }}</em></simpleentry>
+              </div>
+            {% endif %}
+
+            {% if p.notes and p.notes != "" %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry><i style="font-style: italic;">{{ p.notes }}</i></simpleentry>
+              </div>
+            {% endif %}
+
+            {% if p.presentations and p.presentations != "" %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry><em class="pres-text" style="font-style: italic;">Selected Presentations:&ensp;{{ p.presentations }}</em></simpleentry>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="research-block gray">
+  <hr class="inline-hr section" data-content="works in progress">
+  
+  <ul class="aligned-ul">
+    {% for p in site.data.research.works_in_progress %}
+      <li>
+        <div class="paper-row">
+          {% if p.image %}
+            <div class="paper-img">
+              <img src="{{ '/assets/img/papericon/' | relative_url }}{{ p.image }}" alt="{{ p.title }}">
+            </div>
+          {% endif %}
+
+          <div class="paper-text">
+            {% if p.url %}
+              <a href="{{ p.url }}" style="font-weight: 500;">{{ p.title }}</a>
+            {% else %}
+              <span style="font-weight: 500; color: #323539;">{{ p.title }}</span>
+            {% endif %}
+
+            {% if p.type == "joint" and p.coauthors_html %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry>with {{ p.coauthors_html }}</simpleentry>
+              </div>
+            {% endif %}
+
+            {% if p.haiku and p.haiku != "" %}
+              <div style="margin-top: 1.2em;">
+                <simpleentry><em style="color:#377E7F; font-style: italic;">{{ p.haiku }}</em></simpleentry>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="research-block gray">
+  <hr class="inline-hr section" data-content="publications">
+  
+  <ul class="aligned-ul">
+    {% for p in site.data.research.publications %}
+      <li>
+        <div class="paper-row">
+          {% if p.image %}
+            <div class="paper-img">
+              <img src="{{ '/assets/img/papericon/' | relative_url }}{{ p.image }}" alt="{{ p.title }}">
+            </div>
+          {% endif %}
+
+          <div class="paper-text">
+            <a href="{{ p.url }}" style="font-weight: 500;">{{ p.title }}</a>
+
+            {% if p.type == "joint" and p.coauthors_html %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry>with {{ p.coauthors_html }}</simpleentry>
+              </div>
+            {% endif %}
+
+            <div style="margin-top: 0.4em;">
+              <simpleentry>
+                <span style="font-weight: 500;">{{ p.journal }}</span>, {{ p.date }}
+              </simpleentry>
+            </div>
+
+            {% if p.haiku and p.haiku != "" %}
+              <div style="margin-top: 1.2em;">
+                <simpleentry><em style="color:#377E7F; font-style: italic;">{{ p.haiku }}</em></simpleentry>
+              </div>
+            {% endif %}
+
+            {% if p.notes and p.notes != "" %}
+              <div style="margin-top: 0.4em;">
+                <simpleentry><i style="font-style: italic;">{{ p.notes }}</i></simpleentry>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

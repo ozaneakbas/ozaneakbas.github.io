@@ -1,0 +1,33 @@
+working_papers:
+  - title: "Risk and Return in Asset Demand Systems"
+    url: "https://dx.doi.org/10.2139/ssrn.5057341"
+    date: "July 2025"
+    type: "joint"
+    coauthors_html: '<a href="https://sites.google.com/view/aowang-economics/">Ao Wang</a>'
+    status: "rr"
+    journal: "Econometrica"
+    haiku: "Uniform no more. / Risk-return trade-offs reshape, / how assets relate."
+    presentations: "FTG Summer School 2025, Bristol Econometrics Study Group Conference 2025, EARIE 2025, IIOC 2026 (scheduled), Frontiers of Factor Investing Conference 2026 (scheduled), FIRS 2026 (scheduled)"
+    image: "aw.jpg"
+
+works_in_progress:
+  - title: "Dynamic Float Management under Inelastic Demand"
+    type: "solo"
+    haiku: "Demand is rigid. / Issuance moves the stock price. / Investment falls short." 
+    image: "jmp.jpg"
+  - title: "Debt Overhang and Lumpy Investment Timing"
+    type: "joint"
+    coauthors_html: '<a href="https://scholar.google.com/citations?user=GgE-A74AAAAJ&hl=en&oi=sra">Andrea Gamba</a>'
+    haiku: "Smooth paths mask debt drag. / Lumpy jumps make the wedge bite. / Firms cut debt, then leap." 
+    image: "lumpy.jpg"
+
+publications:
+  - title: "Quantifying Credit Gaps Using Survey Data on Discouraged Borrowers"
+    url: "https://dx.doi.org/10.2139/ssrn.4629235"
+    date: "March 2026"
+    type: "joint"
+    coauthors_html: '<a href="https://lu.linkedin.com/in/frank-betz-605a3b3">Frank Betz</a> and <a href="https://lu.linkedin.com/in/lucagattini">Luca Gattini</a>'
+    journal: "Journal of International Financial Markets, Institutions and Money"
+    haiku: "Discouraged firms wait;/ in fact some are good loans, so/ credit gap widens."
+    notes: "This project stems from my pre-PhD research."
+    image: "creditgaps.jpg"

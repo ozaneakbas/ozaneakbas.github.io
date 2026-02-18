@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="main-container">
+
+  {% include header.html %}
+
+  <div class="intro-grid">
+    <div class="intro-text">
+      <p>I am a Ph.D. candidate in Finance and Economics at Warwick Business School.</p>
+      <p>My research lies at the intersection of corporate finance and asset pricing. Using tools from empirical industrial organization and structural econometrics, I study investor demand, corporate policies, and the interplay between the two.</p>
+      <p style="font-weight: 500">I will be on the 2026-2027 job market.</p>
+
+      <p class="contact-header">
+        <b style="font-family: 'Bitter', serif; font-variant: small-caps;">contact info:</b>
+      </p>
+
+      <div class="contact">
+        <ul class="social-icons">
+          <li>
+            <i class="fa-solid fa-square-envelope" aria-hidden="true" style="font-size:2em;color:#377E7F;padding-right:0.375em;"></i>
+            <div id="email">
+                <noscript><i>Please enable Javascript to view my email address.</i></noscript>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="intro-photo">
+      <img src="{{ '/assets/img/ozaneakbas-with-bg-2.png' | relative_url }}" alt="Ozan E. Akbas">
+      {% include social.html %}
+    </div>
+  </div>
+
+  {% include research.html %}
+  {% include footer.html %}
+
+</div>

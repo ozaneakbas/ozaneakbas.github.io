@@ -9,7 +9,7 @@ function scrambledString(tag, objName, initScrambledString, initScrambledStringI
     this.bubbleSortBookmark = 0;
 
     this.rescramble();
-    this.tag.innerHTML = this.string + ' <a href="#" style="color:#377E7F" onClick="' + this.objName + '.initAnimatedBubbleSort();return false;">unscramble</a>';
+    this.tag.innerHTML = this.string + ' <a href="#" class="unscramble" onClick="' + this.objName + '.initAnimatedBubbleSort();return false;">unscramble</a>';
 }
 
 function rescramble() {
@@ -54,7 +54,7 @@ function bubbleSortStep() {
     this.bubbleSortBookmark = i;
     if (!this.changed) {
         clearInterval(this.interval);
-        this.tag.innerHTML = this.string + ' <a href="#" style="color:#377E7F" onClick="' + this.objName + '.copyToClipboard();return false;"><i class="fa-solid fa-copy" aria-hidden="true" style="font-size:1.5em;color:#377E7F;"></i></a>';
+        this.tag.innerHTML = this.string + ' <a href="#" class="unscramble" onClick="' + this.objName + '.copyToClipboard();return false;"><i class="fa-solid fa-copy" aria-hidden="true"></i></a>';
     }
 }
 
