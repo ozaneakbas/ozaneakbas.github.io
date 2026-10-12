@@ -12,16 +12,20 @@
           {% endif %}
 
           <div class="paper-text">
+            {% if p.type == "jmp" %}
+              <div class="paper-kicker">job market paper</div>
+            {% endif %}
+
             <a href="{{ p.url }}" style="font-weight: 500;">{{ p.title }}</a>
 
             {% if p.type == "joint" and p.coauthors_html %}
-              <div style="margin-top: 0.4em;">
+              <div>
                 <simpleentry>with {{ p.coauthors_html }}</simpleentry>
               </div>
             {% endif %}
 
             {% if p.status == "rr" and p.journal %}
-              <div style="margin-top: 0.4em;">
+              <div>
                 <simpleentry>
                   <span style="font-weight: 500;">Revise and Resubmit at {{ p.journal }}</span>
                 </simpleentry>
@@ -29,19 +33,19 @@
             {% endif %}
 
             {% if p.haiku and p.haiku != "" %}
-              <div style="margin-top: 1.2em;">
+              <div class="paper-haiku">
                 <simpleentry><em style="color:#377E7F; font-style: italic;">{{ p.haiku }}</em></simpleentry>
               </div>
             {% endif %}
 
             {% if p.notes and p.notes != "" %}
-              <div style="margin-top: 0.4em;">
+              <div class="paper-notes">
                 <simpleentry><i style="font-style: italic;">{{ p.notes }}</i></simpleentry>
               </div>
             {% endif %}
 
             {% if p.presentations and p.presentations != "" %}
-              <div style="margin-top: 0.4em;">
+              <div class="paper-presentations">
                 <simpleentry><em class="pres-text" style="font-style: italic;">Selected Presentations:&ensp;{{ p.presentations }}</em></simpleentry>
               </div>
             {% endif %}
@@ -73,13 +77,13 @@
             {% endif %}
 
             {% if p.type == "joint" and p.coauthors_html %}
-              <div style="margin-top: 0.4em;">
+              <div>
                 <simpleentry>with {{ p.coauthors_html }}</simpleentry>
               </div>
             {% endif %}
 
             {% if p.haiku and p.haiku != "" %}
-              <div style="margin-top: 1.2em;">
+              <div class="paper-haiku">
                 <simpleentry><em style="color:#377E7F; font-style: italic;">{{ p.haiku }}</em></simpleentry>
               </div>
             {% endif %}
@@ -107,25 +111,25 @@
             <a href="{{ p.url }}" style="font-weight: 500;">{{ p.title }}</a>
 
             {% if p.type == "joint" and p.coauthors_html %}
-              <div style="margin-top: 0.4em;">
+              <div>
                 <simpleentry>with {{ p.coauthors_html }}</simpleentry>
               </div>
             {% endif %}
 
-            <div style="margin-top: 0.4em;">
+            <div>
               <simpleentry>
                 <span style="font-weight: 500;">{{ p.journal }}</span>, {{ p.date }}
               </simpleentry>
             </div>
 
             {% if p.haiku and p.haiku != "" %}
-              <div style="margin-top: 1.2em;">
+              <div class="paper-haiku">
                 <simpleentry><em style="color:#377E7F; font-style: italic;">{{ p.haiku }}</em></simpleentry>
               </div>
             {% endif %}
 
             {% if p.notes and p.notes != "" %}
-              <div style="margin-top: 0.4em;">
+              <div class="paper-notes">
                 <simpleentry><i style="font-style: italic;">{{ p.notes }}</i></simpleentry>
               </div>
             {% endif %}

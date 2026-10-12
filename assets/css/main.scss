@@ -127,6 +127,10 @@ li::marker { content: ""; }
   list-style-type: none;
 }
 
+.research-block .aligned-ul {
+  padding-right: 6.5%; // match the existing left inset
+}
+
 .aligned-ul li {
   margin: 1.5em 0;
 }
@@ -144,7 +148,7 @@ li::marker { content: ""; }
 }
 
 .paper-img {
-  flex: 0 0 150px; max-width: 150px;
+  flex: 0 0 160px; max-width: 160px;
   
   img {
     width: 100%; height: auto; object-fit: cover;
@@ -155,6 +159,18 @@ li::marker { content: ""; }
 }
 
 .paper-text { flex: 1; min-width: 0; }
+
+.paper-kicker {
+  margin-bottom: 0;
+  color: #377E7F;
+  font-family: 'Bitter', serif;
+  font-size: 1em;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+
+.paper-haiku, .paper-notes, .paper-presentations { margin-top: 0; }
 
 footer {
   font-family: 'Bitter', serif; font-size: 8pt; font-weight: 400;
@@ -300,10 +316,12 @@ footer {
   }
   
   .aligned-ul { padding-left: 0; }
+  .research-block .aligned-ul { padding-right: 0; }
   
   .paper-img { 
     margin-bottom: 0; 
-    max-width: 130px; 
+    max-width: 130px;
+    flex-basis: 150px; // preserve the original mobile layout
   }
   
   .aligned-ul li {

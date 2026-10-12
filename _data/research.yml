@@ -1,4 +1,9 @@
 working_papers:
+  - title: "Investor Demand, Public Float, and Corporate Equity Supply"
+    type: "jmp"
+    haiku: "Thin float bends the price; / each trade sets the next one's terms, / so cash waits its turn." 
+    notes: "Draft Coming Soon"
+    image: "jmp.jpg"
   - title: "Risk and Return in Asset Demand Systems"
     url: "https://dx.doi.org/10.2139/ssrn.5057341"
     date: "July 2025"
@@ -6,18 +11,19 @@ working_papers:
     coauthors_html: '<a href="https://sites.google.com/view/aowang-economics/">Ao Wang</a>'
     status: "rr"
     journal: "Econometrica"
-    haiku: "Uniform no more. / Risk-return trade-offs reshape, / how assets relate."
-    presentations: "FTG Summer School 2025, Bristol Econometrics Study Group Conference 2025, EARIE 2025, IIOC 2026 (scheduled), Frontiers of Factor Investing Conference 2026 (scheduled), FIRS 2026 (scheduled)"
+    haiku: "Uniform no more. / Risk-return trade-offs reshape / how assets relate."
+    presentations: "FTG Summer School 2025, Bristol Econometrics Study Group Conference 2025, EARIE 2025, IIOC 2026, Frontiers of Factor Investing Conference 2026, FIRS 2026"
     image: "aw.jpg"
 
 works_in_progress:
-  - title: "Dynamic Float Management under Inelastic Demand"
-    type: "solo"
-    haiku: "Demand is rigid. / Issuance moves the stock price. / Investment falls short." 
-    image: "jmp.jpg"
-  - title: "Debt Overhang and Lumpy Investment Timing"
+  - title: "Price Endogeneity in Asset Demand Systems"
     type: "joint"
-    coauthors_html: '<a href="https://scholar.google.com/citations?user=GgE-A74AAAAJ&hl=en&oi=sra">Andrea Gamba</a>'
+    coauthors_html: '<a href="https://sites.google.com/view/aowang-economics/">Ao Wang</a>'
+    haiku: "Thick markets hush noise. / Common tilts and large holders / leave marks on the price." 
+    image: "aw2.jpg"
+  - title: "Investment Lumpiness and Debt Policy"
+    type: "joint"
+    coauthors_html: '<a href="https://scholar.google.com/citations?user=GgE-A74AAAAJ&hl=en&oi=sra">Andrea Gamba</a> and Ziyue Luo'
     haiku: "Smooth paths mask debt drag. / Lumpy jumps make the wedge bite. / Firms cut debt, then leap." 
     image: "lumpy.jpg"
 
